@@ -1,0 +1,62 @@
+<?php
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+
+function render_cards_list( $attributes, $content, $block) {
+
+		$post_type = $attributes['postType'];
+		$search = isset( $_GET['search'] ) ? $_GET['search'] : '';
+		$per_page = isset( $_GET['per_page'] ) ? $_GET['per_page'] : 12;
+		$meta_key = isset( $_GET['meta_key'] ) ? $_GET['meta_key'] : '';
+		$orderby = isset( $_GET['orderby'] ) ? $_GET['orderby'] : '';
+		$order = isset( $_GET['order'] ) ? $_GET['order'] : 'ASC';
+		$page = isset( $_GET['page'] ) ? $_GET['page'] : 1;
+
+		$tax_queries = null;
+    $meta_query = null;
+
+	  $args = args_global(
+      $post_type,
+      $search,
+      $per_page,
+      $tax_queries,
+      $meta_query,
+      $meta_key,
+      $orderby,
+      $order,
+      $page
+    );
+
+	$html = '';
+
+	$cards_list = new WP_Query($args);
+	while ($cards_list->have_posts()) {
+		$cards_list->the_post();
+
+		$tipo_producto = get_the_terms( get_the_ID(), 'tipo-producto' ); //To do: create a dinamic
+		$marca = get_the_terms( get_the_ID(), 'marcas' ); //To do: create a dinamic
+
+		$html .= '<div class="card-list-content">';
+		
+			$html .= '<div class="card-list__img">';
+				$html .= (get_the_post_thumbnail_url() ? '<img class="card-list__img-src" src="'.get_the_post_thumbnail_url().'" alt="">' : '');
+			$html .= '</div>';
+			$html .= '<div class="card-list__body">';
+				$html .= '<span class="card-list__tag-cat">'.$tipo_producto[0]->name.'</span>';
+				$html .= '<div class="card-list__title">'.get_the_content().'</div>';
+				$html .= '<h4 class="card-list__price">' . get_field('precio');
+				$html .= '<span class="card-list__price-description">' . get_field('nota_de_precio') . '</span></h4>';
+				$html .= '<p class="card-list__marca">Marca: <b class="card-list__marca-bold">'.$marca[0]->name.'</b></p>';
+				$html .= '<a href="https://wa.me/'.get_field('whatsapp-number', 'options').'" target="_blank" class="card-list__contact-us">Pedir</a>';
+			$html .= '</div>';
+
+		$html .= '</div>';
+
+
+	}
+
+	return '<div id="app" class="card-list">'.$html.'</div>';
+
+}
