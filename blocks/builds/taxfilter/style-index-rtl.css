@@ -6,9 +6,10 @@
 }
 .block-taxfilter--inline {
   display: flex;
-  flex-wrap: wrap;
   gap: 10px;
-  justify-content: center;
+  justify-content: space-between;
+  overflow-y: hidden;
+  flex-wrap: nowrap;
 }
 .block-taxfilter__item {
   background: #F3F9FB;
@@ -35,4 +36,13 @@
 .block-taxfilter--checkbox .block-taxfilter__item {
   background: transparent;
   padding: 5px 0px;
+}
+
+@media (max-width: 780px) {
+  .block-taxfilter--inline {
+    justify-content: center;
+  }
+  .block-taxfilter__label span {
+    white-space: nowrap;
+  }
 }

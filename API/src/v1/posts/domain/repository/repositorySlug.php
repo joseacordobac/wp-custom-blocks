@@ -13,7 +13,7 @@ class RepositoryList
         $tax_queries[] = [
           'taxonomy' => $key,
           'field' => 'slug',
-          'terms' => [$value],
+          'terms' => [$value]
         ];
       }
     }

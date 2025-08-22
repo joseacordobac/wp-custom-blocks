@@ -14,6 +14,7 @@ function args_global($post_type, $search, $limit = 12, $taxonomy = [], $meta_que
 
   if ($taxonomy) {
     $args['tax_query'] = array(
+      'relation' => 'OR',
       $taxonomy,
     );
   }

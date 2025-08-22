@@ -11499,6 +11499,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const LIST = (0,_services_env__WEBPACK_IMPORTED_MODULE_1__["default"])().API_LIST;
+const numberDots = numbersString => {
+  let numbers = Number(numbersString);
+  let numbersFormateado = numbers.toLocaleString('es-ES');
+  return numbersFormateado;
+};
 function App({
   queryParams
 }) {
@@ -11508,8 +11513,7 @@ function App({
   };
   const {
     data,
-    loading,
-    error
+    loading
   } = (0,_hook_Usefetch__WEBPACK_IMPORTED_MODULE_2__["default"])(`${LIST}`, options);
   const responseData = data?.data;
   if (loading) return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_Skeleton_skeleton__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -11538,9 +11542,9 @@ function App({
         }
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("h4", {
         className: "card-list__price",
-        children: [item.price, " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
+        children: [numberDots(item.price), " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("span", {
           className: "card-list__price-description",
-          children: item.nota_price
+          children: [" ", item.nota_price]
         }), " "]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("p", {
         className: "card-list__marca",
