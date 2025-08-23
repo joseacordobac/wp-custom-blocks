@@ -1,1 +1,0 @@
-{"version":3,"file":"cards-list/view.css","mappings":";;;;;;;AAAA;CACC,aAAa;CACb,SAAS;CACT,mBAAmB;AACpB","sources":["webpack://special-blocks/./src/components/Skeleton/skeleton.css"],"sourcesContent":[".skeleton {\n\tdisplay: flex;\n\tgap: 10px;\n\talign-items: center;\n}\n"],"names":[],"sourceRoot":""}

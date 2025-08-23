@@ -8,28 +8,17 @@ class RepositoryList
     $tax_queries = null;
     $meta_query = null;
 
-    if($params['taxonomies']){
-      foreach ($params['taxonomies'] as $key => $value) {
-        $tax_queries[] = [
-          'taxonomy' => $key,
-          'field' => 'slug',
-          'terms' => [$value]
-        ];
-      }
-    }
-
     $args = args_global(
       $params['post_type'],
       $params['search'],
       $params['limit'],
-      $tax_queries,
-      $meta_query,
+      $params['taxonomies'],
       $params['meta_key'],
       $params['orderby'],
       $params['order'],
       $params['page']
     );
-
+     
     $get_all_post = new WP_Query($args);
     $data['data'] = [];
 
