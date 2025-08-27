@@ -1,1 +1,44 @@
-.block-my-search{background-color:#f3f9fb;border-radius:10px;display:flex;height:48px;overflow:hidden;padding-right:10px;width:100%}.block-my-search__input{background-color:transparent;border:none;width:100%}.block-my-search__input:focus{outline:none}.block-my-search__input::-moz-placeholder{color:#bfbfbf}.block-my-search__input::placeholder{color:#bfbfbf}.block-my-search__button{background:#ffd970;border:none;color:#096b36;font-size:18px;padding:16px}
+/*!***********************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/search/editor.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.block-my-search {
+  width: 100%;
+  display: flex;
+  border-radius: 10px;
+  height: 48px;
+  background-color: #F3F9FB;
+  overflow: hidden;
+  padding-right: 10px;
+}
+.block-my-search__input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+}
+.block-my-search__input:focus {
+  outline: none;
+}
+.block-my-search__input::-moz-placeholder {
+  color: #BFBFBF;
+}
+.block-my-search__input::placeholder {
+  color: #BFBFBF;
+}
+.block-my-search__button {
+  border: none;
+  background: #FFD970;
+  color: #096B36;
+  padding: 16px;
+  font-size: 18px;
+}
