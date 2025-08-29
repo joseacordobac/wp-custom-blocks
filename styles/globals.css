@@ -34,6 +34,10 @@
   .content-filter-result{
     flex-direction: column-reverse;
   }
+
+  .mobil-display--none{
+    display: none !important;
+  }
 }
 
 /** header fixed */
@@ -130,18 +134,21 @@ header.js-scrolled .wp-block-site-logo img{
   /** filters for mobile */
   .mobile-float{
     position: fixed;
-    z-index: 100;
+    z-index: -1;
     background: white;
     width: 100%;
-    left: -800px;
-    top: 0;
+    left: 0px;
+    bottom: -1500px;
     padding: 23px;
     height: 100vh;
+    opacity: 1;
     transition: 0.35s;
   }
 
   .mobile-float.mobile-float--active{
-    left: 0px;
+    bottom: 0px;
+    opacity: 1;
+    z-index: 100;
     transition: 0.35s;
   }
 }

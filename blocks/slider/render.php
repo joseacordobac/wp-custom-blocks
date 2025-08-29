@@ -6,6 +6,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 function render_slider_block($block_attributes, $content) {
 	
+	$class = isset( $block_attributes['className'] ) ? $block_attributes['className'] : '';
 	$slider_options = $block_attributes['slideConfig'];
 	$slider_icons = $block_attributes['arrowIcon'];
 	$slider_id = isset($block_attributes['sliderId']) ? 'slider-'.$block_attributes['sliderId'] : 'slider-' . uniqid();
@@ -20,7 +21,7 @@ function render_slider_block($block_attributes, $content) {
 	wp_enqueue_style( 'slider-swiper', 'https://unpkg.com/swiper/swiper-bundle.min.css',array(),'1.1','all');
 	wp_enqueue_script( 'slider-swiper', 'https://unpkg.com/swiper/swiper-bundle.min.js', array(), '1.1', true);
 
-	$html = '<div class="element-slider-contains alignfull">';
+	$html = '<div class="element-slider-contains alignfull ' . esc_attr($class) . '">';
 		$html .= '<div class="swiper-container slider-block" id="' . $slider_id. '" data-swiper="' . esc_attr($jsonSlideConfig) . '">';
 
 			$html .= '<div class="swiper-wrapper content-slider">';
