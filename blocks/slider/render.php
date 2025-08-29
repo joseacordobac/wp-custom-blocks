@@ -16,6 +16,7 @@ function render_slider_block($block_attributes, $content) {
 	$slider_arrows = isset($slider_options['arrows']) ? $slider_options['arrows'] : false;
 	
 
+
 	wp_enqueue_style( 'slider-swiper', 'https://unpkg.com/swiper/swiper-bundle.min.css',array(),'1.1','all');
 	wp_enqueue_script( 'slider-swiper', 'https://unpkg.com/swiper/swiper-bundle.min.js', array(), '1.1', true);
 
@@ -30,8 +31,11 @@ function render_slider_block($block_attributes, $content) {
 
 		$html .= '</div>';
 		if($slider_arrows){
-			$html .= '<div class="arrow-btn arrow-btn-right next-'.$slider_id .'"><img src="' . $slider_icons['next'] .'" alt="arrow-right"></img></div>';
-			$html .= '<div class="arrow-btn arrow-btn-left prev-'.$slider_id .'"><img src="' . $slider_icons['prev'] .'" alt="arrow-left"></img></div>';
+			$nextSlider = substr($slider_options['navigation']['nextEl'], 1);
+			$prevSlider = substr($slider_options['navigation']['prevEl'], 1);
+
+			$html .= '<div class="arrow-btn arrow-btn-right '. $nextSlider .'"><img src="' . $slider_icons['next'] .'" alt="arrow-right"></img></div>';
+			$html .= '<div class="arrow-btn arrow-btn-left '. $nextSlider .'"><img src="' . $slider_icons['prev'] .'" alt="arrow-left"></img></div>';
 		}
 	$html .= '</div>';
 

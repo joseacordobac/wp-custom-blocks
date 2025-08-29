@@ -6,15 +6,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 function render_cards_list( $attributes, $content, $block) {
 
-		$post_type = $attributes['postType'];
-		$search = isset( $_GET['search'] ) ? $_GET['search'] : '';
-		$per_page = isset( $_GET['per_page'] ) ? $_GET['per_page'] : 12;
-		$meta_key = isset( $_GET['meta_key'] ) ? $_GET['meta_key'] : '';
-		$orderby = isset( $_GET['orderby'] ) ? $_GET['orderby'] : '';
-		$order = isset( $_GET['order'] ) ? $_GET['order'] : 'ASC';
-		$page = isset( $_GET['page'] ) ? $_GET['page'] : 1;
+	$post_type = $attributes['postType'];
+	$search = isset( $_GET['search'] ) ? $_GET['search'] : '';
+	$per_page = isset( $_GET['per_page'] ) ? $_GET['per_page'] : 12;
+	$meta_key = isset( $_GET['meta_key'] ) ? $_GET['meta_key'] : '';
+	$orderby = isset( $_GET['orderby'] ) ? $_GET['orderby'] : '';
+	$order = isset( $_GET['order'] ) ? $_GET['order'] : 'ASC';
+	$page = isset( $_GET['page'] ) ? $_GET['page'] : 1;
 
-		$tax_queries = null;
+	$tax_queries = null;
     $meta_query = null;
 
 	  $args = args_global(
@@ -32,6 +32,8 @@ function render_cards_list( $attributes, $content, $block) {
 	$html = '';
 
 	$cards_list = new WP_Query($args);
+	$total_posts = $cards_list->found_posts;
+
 	while ($cards_list->have_posts()) {
 		$cards_list->the_post();
 
@@ -53,10 +55,8 @@ function render_cards_list( $attributes, $content, $block) {
 			$html .= '</div>';
 
 		$html .= '</div>';
-
-
 	}
 
-	return '<div id="app" class="card-list">'.$html.'</div>';
+	return '<div id="app" class="card-list" data-total="' . $total_posts . '">'.$html.'</div>';
 
 }

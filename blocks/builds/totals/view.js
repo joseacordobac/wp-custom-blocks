@@ -1,7 +1,1 @@
-/******/ (() => { // webpackBootstrap
-/*!****************************!*\
-  !*** ./src/totals/view.js ***!
-  \****************************/
-
-/******/ })()
-;
+(()=>{"use strict";const e=(e,t)=>{const r=new URL(window.location.href);r.searchParams.set(e,t),window.history.pushState({},"",r),0===t.length&&(r.searchParams.delete(e),window.history.pushState({},"",r))};window.addEventListener("DOMContentLoaded",(()=>{const t=document.querySelector(".card-list");t&&(e=>{const t=document.querySelector(".card-list-head__total-count");t&&(t.innerHTML=e)})(t.getAttribute("data-total")),(()=>{const t=document.querySelector(".card-list-head__sort-order");t&&t.addEventListener("click",(()=>t.classList.contains("card-list-head__sort-order--desc")?(e("order","ASC"),t.classList.remove("card-list-head__sort-order--desc"),t.classList.add("card-list-head__sort-order--asc"),void(t.innerText="Mayor a Menor")):t.classList.contains("card-list-head__sort-order--asc")?(e("order","DESC"),t.classList.add("card-list-head__sort-order--desc"),t.classList.remove("card-list-head__sort-order--asc"),void(t.innerText="Menor a Mayor")):void 0))})()}))})();

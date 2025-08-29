@@ -74,6 +74,10 @@ header.js-scrolled .wp-block-site-logo img{
 
 @media(max-width: 780px){
 
+  #wp--skip-link--target{
+    margin-top: 10px !important;
+  }
+
   .header-columns{
     flex-direction:row !important;
     gap: 5px !important;
@@ -120,5 +124,24 @@ header.js-scrolled .wp-block-site-logo img{
 
   .block-my-search__button{
     display: none;
+  }
+
+
+  /** filters for mobile */
+  .mobile-float{
+    position: fixed;
+    z-index: 100;
+    background: white;
+    width: 100%;
+    left: -800px;
+    top: 0;
+    padding: 23px;
+    height: 100vh;
+    transition: 0.35s;
+  }
+
+  .mobile-float.mobile-float--active{
+    left: 0px;
+    transition: 0.35s;
   }
 }

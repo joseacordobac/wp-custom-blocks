@@ -22,7 +22,7 @@ function render_taxfilter( $attributes, $content, $block) {
 		$terms_list .= '<div class="block-taxfilter__item">';
 			$terms_list .= '<label class="block-taxfilter__label">';
 				$terms_list .= '<input class="block-taxfilter__input" type="'.$type.'" value="' . $term->slug . '" name="' . $taxonomy_slug . '" id="' . $term->slug . '">';
-				$terms_list .= '<span>' . $term->name . '</span>';
+				$terms_list .= '<span class="block-taxfilter__text">' . $term->name . '</span>';
 			$terms_list .= '</label>';
 		$terms_list .= '</div>';
 	}
