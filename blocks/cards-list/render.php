@@ -43,15 +43,15 @@ function render_cards_list( $attributes, $content, $block) {
 		$html .= '<div class="card-list-content">';
 		
 			$html .= '<div class="card-list__img">';
-				$html .= (get_the_post_thumbnail_url() ? '<img class="card-list__img-src" src="'.get_the_post_thumbnail_url().'" alt="">' : '');
+				$html .= (get_field('url_de_la_imagen') ? '<img class="card-list__img-src" src="'.get_field('url_de_la_imagen') .'" alt="">' : '');
 			$html .= '</div>';
 			$html .= '<div class="card-list__body">';
 				$html .= '<span class="card-list__tag-cat">'.$tipo_producto[0]->name.'</span>';
-				$html .= '<div class="card-list__title">'.get_the_content().'</div>';
+				$html .= '<h3 class="card-list__title">'.get_the_content().'</h3>';
 				$html .= '<h4 class="card-list__price">' . get_field('precio');
 				$html .= '<span class="card-list__price-description">' . get_field('nota_de_precio') . '</span></h4>';
 				$html .= '<p class="card-list__marca">Marca: <b class="card-list__marca-bold">'.$marca[0]->name.'</b></p>';
-				$html .= '<a href="https://wa.me/'.get_field('whatsapp-number', 'options').'" target="_blank" class="card-list__contact-us">Pedir</a>';
+				$html .= '<a href="https://wa.me/'.get_field('whatsapp-number', 'options').'?text=Estoy interesado en:'. get_the_content() .'" target="_blank" class="card-list__contact-us">Pedir</a>';
 			$html .= '</div>';
 
 		$html .= '</div>';
