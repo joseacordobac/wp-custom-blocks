@@ -1,0 +1,23 @@
+/*!**************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/pagination/style.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************/
+.content-pagination.center {
+  justify-content: center;
+  display: flex;
+}
+
+/** Mateial configs */
+button.MuiPaginationItem-root {
+  height: 50px;
+  width: 50px;
+  border: solid 1px #C4C4C4;
+  color: #666666;
+  font-size: 16px;
+}
+
+.css-6qpcc8-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+  background-color: var(--wp--preset--color--accent-1) !important;
+  color: white;
+}
+
+/*# sourceMappingURL=style-index.css.map*/
