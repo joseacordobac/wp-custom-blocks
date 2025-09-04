@@ -1,6 +1,389 @@
-.lecciones{height:100%;margin:0 auto;max-width:95%;padding:20px}.cours-back a{color:#000;font-size:20px;font-weight:700;text-decoration:none}.lecciones__title{font-size:35px}.lecciones__list{align-items:center;background-color:#fff;cursor:pointer;display:flex;gap:10px;justify-content:space-between;padding:0 8px;transition:.35s}.lecciones__list:hover{background-color:#f6f6f6;cursor:pointer;transition:.35s}.lecciones__list:after{content:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAxMiAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik0yLjAwMDA2IDIuMzMzOThMOS41OTM3OCA5LjkyNzc3TDIgMTcuNTIxNSIgc3Ryb2tlPSIjMjIyMjIyIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPg0KPC9zdmc+DQo=)}.lecciones__list--completed.lecciones__list:after{content:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTMiIHZpZXdCb3g9IjAgMCAxNiAxMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik0xLjYzNjcyIDYuMzM0NDdMNS44NzkzNiAxMC41NzcxTDE0LjM2MzcgMi4wOTE4IiBzdHJva2U9IiMwMDYyRDEiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+DQo8L3N2Zz4NCg==)}.lecciones__link{align-items:center;display:flex;gap:10px;text-decoration:none;width:100%}.lecciones__list-img{height:90px}.lecciones__img{height:100%;-o-object-fit:cover;object-fit:cover;width:80px}.lecciones-info{display:flex;flex-direction:column;gap:10px;margin-top:10px;max-height:70vh;overflow-y:scroll}.lecciones__name{color:#000;font-size:14px;padding:12px 0;text-decoration:none}.course-class__contain--column .lecciones__name{font-size:18px}.lecciones__line{color:#0062d1;cursor:pointer}@media (max-width:780px){.course-class__contain--column .lecciones__name{font-size:16px}.lecciones-head{align-items:center;display:flex;justify-content:space-between}.clase .lecciones__title{display:none}.lecciones__title{font-size:24px}.lecciones{max-width:100%;max-width:100vw;padding:0}.lecciones-info{max-height:90vh}}
-.course-hero{display:grid;grid-template-columns:60% 40%;margin:0 auto;max-width:95%;padding:20px}.course-hero__title{font-size:40px}.course-hero__info-content{display:flex;gap:10px;margin-bottom:30px}.course-hero__subtitle{align-items:center;display:flex;font-size:14px;gap:10px;padding-right:15px;position:relative}.course-hero__subtitle:before{content:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMSAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik01LjQxNjY3IDAuMjQ4MDQ3QzIuNDM3NSAwLjI0ODA0NyAwIDIuNjg1NTUgMCA1LjY2NDcxQzAgOC42NDM4OCAyLjQzNzUgMTEuMDgxNCA1LjQxNjY3IDExLjA4MTRDOC4zOTU4MyAxMS4wODE0IDEwLjgzMzMgOC42NDM4OCAxMC44MzMzIDUuNjY0NzFDMTAuODMzMyAyLjY4NTU1IDguMzk1ODMgMC4yNDgwNDcgNS40MTY2NyAwLjI0ODA0N1pNNy4zMTI1IDYuNzQ4MDVDNy4xNSA3LjAxODg4IDYuODI1IDcuMDczMDUgNi41NTQxNyA2Ljk2NDcxTDUuMTQ1ODMgNi4xNTIyMUM0Ljk4MzMzIDYuMDQzODggNC44NzUgNS44ODEzOCA0Ljg3NSA1LjY2NDcxVjIuOTU2MzhDNC44NzUgMi42MzEzOCA1LjA5MTY3IDIuNDE0NzEgNS40MTY2NyAyLjQxNDcxQzUuNzQxNjcgMi40MTQ3MSA1Ljk1ODMzIDIuNjMxMzggNS45NTgzMyAyLjk1NjM4VjUuMzM5NzFMNy4wOTU4MyA1Ljk4OTcxQzcuMzY2NjcgNi4xNTIyMSA3LjQyMDgzIDYuNDc3MjEgNy4zMTI1IDYuNzQ4MDVaIiBmaWxsPSJ1cmwoI3BhaW50MF9saW5lYXJfNDMzXzM4NTEpIi8+DQo8ZGVmcz4NCjxsaW5lYXJHcmFkaWVudCBpZD0icGFpbnQwX2xpbmVhcl80MzNfMzg1MSIgeDE9IjUuNDE2NjciIHkxPSIwLjI0ODA0NyIgeDI9IjUuNDE2NjciIHkyPSIxMS4wODE0IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+DQo8c3RvcCBzdG9wLWNvbG9yPSIjNEM2MDBFIi8+DQo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM5QkMzMUEiLz4NCjwvbGluZWFyR3JhZGllbnQ+DQo8L2RlZnM+DQo8L3N2Zz4NCg==);height:20px;right:0;position:absolute;top:3px;width:20px}.course-hero__description{margin-bottom:30px}
-.coursesmenu{cursor:pointer;display:none;height:25px;position:relative;width:25px}.coursesmenu__text:after{content:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNSAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik0xNyAxMC4yNUwyMS41IDEyLjVMMTIuNSAxN0wzLjUgMTIuNUw4IDEwLjI1TTE3IDE1LjI1TDIxLjUgMTcuNUwxMi41IDIyTDMuNSAxNy41TDggMTUuMjVNMTIuNSAzTDIxLjUgNy41TDEyLjUgMTJMMy41IDcuNUwxMi41IDNaIiBzdHJva2U9IiMwMDYyRDEiIHN0cm9rZS13aWR0aD0iMiIvPg0KPC9zdmc+DQo=);position:absolute}@media(max-width:780px){.coursesmenu{display:block}}
-.block_callback{background-color:#f6f6f6}.course{margin:0 auto;max-width:95%;padding:20px 20px 90px}.course-class__contain{display:grid;grid-template-columns:70% 30%}.course-class__contain--column{grid-template-columns:1fr}.course-class__contain--column .lecciones-info{max-height:100%;overflow:inherit}.course-back{align-items:center;display:flex;justify-content:space-between}.course-back__link{align-items:center;color:#000;display:flex;font-weight:850;gap:5px;text-decoration:none}.course-back__link:before{content:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDkiIHZpZXdCb3g9IjAgMCA0OCA0OSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik0zOCAyNC44NzVIMTBNMTAgMjQuODc1TDIyIDM2Ljg3NU0xMCAyNC44NzVMMjIgMTIuODc1IiBzdHJva2U9IiMxMTExMTEiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+DQo8L3N2Zz4NCg==);transform:scale(.7) translate(0);transition:.3s}.course-back__link:hover:before{transform:scale(.7) translate(5px);transition:.35s}@media(max-width:780px){.course{padding:0}.course-class__contain,.course-hero{grid-template-columns:1fr}.course-hero{max-width:100%;padding:0}.course__list{background:#fff;height:100vh;position:fixed;left:-100%;top:0;transition:.35s}.lecciones--active.course__list{padding:15px;left:0;transition:.35s}.course-hero__title{font-size:24px;line-height:25px;margin-bottom:5px}.course__list.course__list--normal{background:#fff;height:inherit;position:relative;left:inherit}}
-.btn-completed{align-items:center;background:#fff;color:#000;cursor:pointer;display:flex;font-size:16px;justify-content:center;padding:10px 30px}.btn-completed:after{content:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTEiIHZpZXdCb3g9IjAgMCAxNiAxMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik0xLjYzNjcyIDUuODM0NDdMNS44NzkzNiAxMC4wNzcxTDE0LjM2MzcgMS41OTE4IiBzdHJva2U9IiNEM0QzRDMiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4NCjwvc3ZnPg0K);margin-right:10px}.btn-completed.is_completed{color:var(--wp--preset--color--secundario)}.btn-completed.is_completed:after{content:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTEiIHZpZXdCb3g9IjAgMCAxNSAxMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik0xLjEzNjcyIDUuODM0NDdMNS4zNzkzNiAxMC4wNzcxTDEzLjg2MzcgMS41OTE4IiBzdHJva2U9IiMwMDYyRDEiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4NCjwvc3ZnPg0K)}.btn-completed__text{text-align:center}@media(max-width:780px){.btn-completed__text{font-size:12px}}
-.course-info{display:flex;flex-direction:column;gap:20px}.course-btn_-navs{display:flex;justify-content:space-between}.course-btn__next{align-items:center;background:#0062d1;color:#fff;display:flex;gap:5px;padding:20px 25px;text-decoration:none}.course__description p{line-height:20px;margin:16px 0}.wp-block-list li{margin:12px 0}.course-btn--next{position:relative}.course-btn--next:after{content:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAyNCAyNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik04LjAwNTg5IDUuMTIzMDVMMTUuNTk5NiAxMi43MTY4TDguMDA1ODMgMjAuMzEwNSIgc3Ryb2tlPSIjRkVGRUZFIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+DQo8L3N2Zz4NCg==)}.course-btn__next.course-btn--prev:before{content:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAyNCAyNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik0xNS45OTk5IDIwLjYyM0w4LjQwNjIzIDEzLjAyOTNMMTYgNS40MzU1NyIgc3Ryb2tlPSIjRkVGRUZFIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+DQo8L3N2Zz4NCg==)}@media(max-width:780px){.course-btn__next{font-size:12px;padding:10px}.course__title{font-size:24px;line-height:30px}}
+/*!*******************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./src/clases/app/components/lecciones/lecciones.css ***!
+  \*******************************************************************************************************************************************************************************************************/
+.lecciones {
+	max-width: 95%;
+	margin: 0 auto;
+	padding: 20px;
+	height: 100%;
+}
+
+.cours-back a {
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.lecciones__title {
+	font-size: 35px;
+}
+
+.lecciones__list{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+	background-color: white;
+	transition: 0.35s;
+	gap: 10px;
+	padding: 0px 8px;
+}
+
+.lecciones__list:hover{
+	cursor: pointer;
+	background-color: #F6F6F6;
+	transition: 0.35s;
+}
+
+.lecciones__list::after {
+	content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAxMiAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik0yLjAwMDA2IDIuMzMzOThMOS41OTM3OCA5LjkyNzc3TDIgMTcuNTIxNSIgc3Ryb2tlPSIjMjIyMjIyIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPg0KPC9zdmc+DQo=);
+}
+
+.lecciones__list--completed.lecciones__list::after {
+	content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTMiIHZpZXdCb3g9IjAgMCAxNiAxMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik0xLjYzNjcyIDYuMzM0NDdMNS44NzkzNiAxMC41NzcxTDE0LjM2MzcgMi4wOTE4IiBzdHJva2U9IiMwMDYyRDEiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+DQo8L3N2Zz4NCg==);
+}
+
+.lecciones__link {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	text-decoration: none;
+	width: 100%;
+}
+
+.lecciones__list-img {
+	height: 90px;
+}
+
+.lecciones__img {
+	width: 80px;
+	height: 100%;
+	-o-object-fit: cover;
+	   object-fit: cover;
+}
+
+.lecciones-info {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin-top: 10px;
+	overflow-y: scroll;
+	max-height: 70vh;
+}
+
+.lecciones__name {
+	font-size: 14px;
+	color: black;
+	text-decoration: none;
+	padding: 12px 0px;
+}
+
+.course-class__contain--column .lecciones__name{
+	font-size: 18px;
+}
+
+.lecciones__line{
+	cursor: pointer;
+	color: #0062D1;
+}
+
+@media (max-width: 780px) {
+
+
+	.course-class__contain--column .lecciones__name{
+		font-size: 16px;
+	}
+
+	.lecciones-head{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.clase .lecciones__title{
+		display: none;
+	}
+
+	.lecciones__title{
+		font-size: 24px;
+	}
+
+	.lecciones{
+		padding: 0px;
+		max-width: 100%;
+	}
+
+	.lecciones {
+		padding: 0px;
+		max-width: 100vw;
+	}
+
+	.lecciones-info{
+		max-height: 90vh;
+	}
+}
+
+/*!*********************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./src/clases/app/components/headcourse/headcourse.css ***!
+  \*********************************************************************************************************************************************************************************************************/
+.course-hero {
+	display: grid;
+	grid-template-columns: 60% 40%;
+	max-width: 95%;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+
+.course-hero__title{
+	font-size: 40px;
+}
+
+.course-hero__info-content {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 30px;
+}
+
+.course-hero__subtitle {
+	font-size: 14px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding-right: 15px;
+}
+
+.course-hero__subtitle::before{
+	position: absolute;
+	content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMSAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik01LjQxNjY3IDAuMjQ4MDQ3QzIuNDM3NSAwLjI0ODA0NyAwIDIuNjg1NTUgMCA1LjY2NDcxQzAgOC42NDM4OCAyLjQzNzUgMTEuMDgxNCA1LjQxNjY3IDExLjA4MTRDOC4zOTU4MyAxMS4wODE0IDEwLjgzMzMgOC42NDM4OCAxMC44MzMzIDUuNjY0NzFDMTAuODMzMyAyLjY4NTU1IDguMzk1ODMgMC4yNDgwNDcgNS40MTY2NyAwLjI0ODA0N1pNNy4zMTI1IDYuNzQ4MDVDNy4xNSA3LjAxODg4IDYuODI1IDcuMDczMDUgNi41NTQxNyA2Ljk2NDcxTDUuMTQ1ODMgNi4xNTIyMUM0Ljk4MzMzIDYuMDQzODggNC44NzUgNS44ODEzOCA0Ljg3NSA1LjY2NDcxVjIuOTU2MzhDNC44NzUgMi42MzEzOCA1LjA5MTY3IDIuNDE0NzEgNS40MTY2NyAyLjQxNDcxQzUuNzQxNjcgMi40MTQ3MSA1Ljk1ODMzIDIuNjMxMzggNS45NTgzMyAyLjk1NjM4VjUuMzM5NzFMNy4wOTU4MyA1Ljk4OTcxQzcuMzY2NjcgNi4xNTIyMSA3LjQyMDgzIDYuNDc3MjEgNy4zMTI1IDYuNzQ4MDVaIiBmaWxsPSJ1cmwoI3BhaW50MF9saW5lYXJfNDMzXzM4NTEpIi8+DQo8ZGVmcz4NCjxsaW5lYXJHcmFkaWVudCBpZD0icGFpbnQwX2xpbmVhcl80MzNfMzg1MSIgeDE9IjUuNDE2NjciIHkxPSIwLjI0ODA0NyIgeDI9IjUuNDE2NjciIHkyPSIxMS4wODE0IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+DQo8c3RvcCBzdG9wLWNvbG9yPSIjNEM2MDBFIi8+DQo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM5QkMzMUEiLz4NCjwvbGluZWFyR3JhZGllbnQ+DQo8L2RlZnM+DQo8L3N2Zz4NCg==);
+	width: 20px;
+	height: 20px;
+	right: 0px;
+	top: 3px;
+}
+
+.course-hero__description{
+	margin-bottom: 30px;
+}
+
+
+/*!***********************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./src/clases/app/components/coursesMenu/coursesmenu.css ***!
+  \***********************************************************************************************************************************************************************************************************/
+.coursesmenu {
+	position: relative;
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	display: none;
+}
+
+.coursesmenu__text::after{
+	position: absolute;
+	content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNSAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik0xNyAxMC4yNUwyMS41IDEyLjVMMTIuNSAxN0wzLjUgMTIuNUw4IDEwLjI1TTE3IDE1LjI1TDIxLjUgMTcuNUwxMi41IDIyTDMuNSAxNy41TDggMTUuMjVNMTIuNSAzTDIxLjUgNy41TDEyLjUgMTJMMy41IDcuNUwxMi41IDNaIiBzdHJva2U9IiMwMDYyRDEiIHN0cm9rZS13aWR0aD0iMiIvPg0KPC9zdmc+DQo=);
+}
+
+@media(max-width: 780px){
+	.coursesmenu{
+		display: block;
+	}
+}
+
+
+/*!********************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./src/clases/app/pages/course/course.css ***!
+  \********************************************************************************************************************************************************************************************/
+.block_callback{
+	background-color: #F6F6F6;
+}
+
+.course {
+	margin: 0 auto;
+	max-width: 95%;
+	padding: 20px;
+	padding-bottom: 90px;
+}
+
+.course-class__contain {
+	display: grid;
+	grid-template-columns: 70% 30%;
+}
+
+.course-class__contain--column{
+	grid-template-columns: 1fr;
+}
+
+.course-class__contain--column .lecciones-info{
+	overflow: inherit;
+	max-height: 100%;
+}
+
+.course-back{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.course-back__link {
+	text-decoration: none;
+	color: black;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	font-weight: 850;
+}
+
+.course-back__link::before{
+	content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDkiIHZpZXdCb3g9IjAgMCA0OCA0OSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik0zOCAyNC44NzVIMTBNMTAgMjQuODc1TDIyIDM2Ljg3NU0xMCAyNC44NzVMMjIgMTIuODc1IiBzdHJva2U9IiMxMTExMTEiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+DQo8L3N2Zz4NCg==);
+	transform: scale(0.7) translate(0px, 0px);
+	transition: 0.3s;
+}
+
+.course-back__link:hover::before{
+	transform: scale(0.7) translate(5px, 0px);
+	transition: 0.35s;
+}
+
+@media(max-width:780px){
+	.course{
+		padding: 0px;
+	}
+
+	.course-class__contain {
+		grid-template-columns: 1fr;
+	}
+
+	.course-hero{
+		grid-template-columns: 1fr;
+		max-width: 100%;
+		padding: 0px;
+	}
+
+	.course__list{
+		position: fixed;
+		top: 0px;
+		background: white;
+		height: 100vh;
+		left: -100%;
+		transition: 0.35s;
+	}
+
+	.lecciones--active.course__list{
+		left: 0px;
+		transition: 0.35s;
+		padding: 15px;
+	}
+
+	.course-hero__title{
+		font-size: 24px;
+		line-height: 25px;
+		margin-bottom: 5px
+	}
+
+	.course__list.course__list--normal{
+		position: relative;
+		background: white;
+		height: inherit;
+		left: inherit;
+	}
+}
+
+/*!*************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./src/clases/app/components/btnCompleted/BtnCompleted.css ***!
+  \*************************************************************************************************************************************************************************************************************/
+.btn-completed {
+    color: black;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 30px;
+    font-size: 16px;
+		cursor: pointer;
+}
+
+.btn-completed::after{
+	content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTEiIHZpZXdCb3g9IjAgMCAxNiAxMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik0xLjYzNjcyIDUuODM0NDdMNS44NzkzNiAxMC4wNzcxTDE0LjM2MzcgMS41OTE4IiBzdHJva2U9IiNEM0QzRDMiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4NCjwvc3ZnPg0K);
+	margin-right: 10px;
+}
+
+.btn-completed.is_completed{
+	color: var(--wp--preset--color--secundario);
+}
+
+.btn-completed.is_completed::after{
+	content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTEiIHZpZXdCb3g9IjAgMCAxNSAxMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik0xLjEzNjcyIDUuODM0NDdMNS4zNzkzNiAxMC4wNzcxTDEzLjg2MzcgMS41OTE4IiBzdHJva2U9IiMwMDYyRDEiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4NCjwvc3ZnPg0K);
+}
+
+.btn-completed__text{
+	text-align: center;
+}
+
+
+@media(max-width:780px){
+	.btn-completed__text{
+		font-size: 12px;
+	}
+}
+
+/*!***********************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./src/clases/app/components/clase/clase.css ***!
+  \***********************************************************************************************************************************************************************************************/
+.course-info{
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.course-btn_-navs {
+	display: flex
+;
+	justify-content: space-between;
+}
+
+.course-btn__next {
+	background: #0062D1;
+	color: white;
+	padding: 20px 25px;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.course__description p{
+	margin: 16px 0px;
+	line-height: 20px;
+}
+
+.wp-block-list li{
+	margin: 12px 0px;
+}
+
+.course-btn--next{
+	position: relative;
+}
+
+.course-btn--next::after{
+	content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAyNCAyNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik04LjAwNTg5IDUuMTIzMDVMMTUuNTk5NiAxMi43MTY4TDguMDA1ODMgMjAuMzEwNSIgc3Ryb2tlPSIjRkVGRUZFIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+DQo8L3N2Zz4NCg==);
+}
+
+.course-btn__next.course-btn--prev::before{
+	content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAyNCAyNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik0xNS45OTk5IDIwLjYyM0w4LjQwNjIzIDEzLjAyOTNMMTYgNS40MzU1NyIgc3Ryb2tlPSIjRkVGRUZFIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+DQo8L3N2Zz4NCg==);
+}
+
+
+@media(max-width: 780px){
+	.course-btn__next{
+		padding: 10px 10px;
+		font-size: 12px;
+	}
+
+	.course__title{
+		font-size: 24px;
+    line-height: 30px;
+	}
+}
+

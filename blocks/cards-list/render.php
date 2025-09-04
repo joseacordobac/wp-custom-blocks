@@ -36,6 +36,7 @@ function render_cards_list( $attributes, $content, $block) {
 
 	while ($cards_list->have_posts()) {
 		$cards_list->the_post();
+		$total_pages = $cards_list->max_num_pages;
 
 		$tipo_producto = get_the_terms( get_the_ID(), 'tipo-producto' ); //To do: create a dinamic
 		$marca = get_the_terms( get_the_ID(), 'marcas' ); //To do: create a dinamic
@@ -57,6 +58,6 @@ function render_cards_list( $attributes, $content, $block) {
 		$html .= '</div>';
 	}
 
-	return '<div id="app" class="card-list" data-total="' . $total_posts . '">'.$html.'</div>';
+	return '<div id="app" class="card-list" data-pages="' . $total_pages . '">'.$html.'</div>';
 
 }
