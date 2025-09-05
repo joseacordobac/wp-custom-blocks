@@ -1,19 +1,20 @@
 <?php 
 
 function args_global(
+  
   $post_type, 
   $search, 
   $limit = 12, 
   $taxonomies = [], 
   $meta_key, 
-  $orderby = 'meta_value_num', 
+  $orderby = 'meta_value', 
   $order, 
   $page = 1) {
 
     $args = array(
       'post_type'      => $post_type,
       'meta_key'       => $meta_key,
-      'orderby'        => $orderby,
+      'orderby'        => 'meta_value',
       'posts_per_page' => $limit,
       'order'          => $order,
       'paged'          => $page

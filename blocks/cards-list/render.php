@@ -8,21 +8,20 @@ function render_cards_list( $attributes, $content, $block) {
 
 	$post_type = $attributes['postType'];
 	$search = isset( $_GET['search'] ) ? $_GET['search'] : '';
-	$per_page = isset( $_GET['per_page'] ) ? $_GET['per_page'] : 12;
-	$meta_key = isset( $_GET['meta_key'] ) ? $_GET['meta_key'] : '';
+	$limit = isset( $_GET['per_page'] ) ? $_GET['per_page'] : 12;
+	$meta_key = isset( $_GET['meta_key'] ) ? $_GET['meta_key'] : 'precio';
 	$orderby = isset( $_GET['orderby'] ) ? $_GET['orderby'] : '';
 	$order = isset( $_GET['order'] ) ? $_GET['order'] : 'ASC';
 	$page = isset( $_GET['page'] ) ? $_GET['page'] : 1;
 
-	$tax_queries = null;
+	$taxonomies = null;
     $meta_query = null;
 
 	  $args = args_global(
       $post_type,
       $search,
-      $per_page,
-      $tax_queries,
-      $meta_query,
+      $limit,
+      $taxonomies,
       $meta_key,
       $orderby,
       $order,
