@@ -7,7 +7,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 function render_total_filter( $attributes, $content, $block) {
 
 	$html = '<div class="card-list-head">';
-		$html .= '<h4 class="card-list-head__total"><span class="card-list-head__total-count">0</span> productos en tu busqueda</h4>';
+		$html .= '<h4 class="card-list-head__total"><span class="card-list-head__total-count">0</span> productos en tu búsqueda</h4>';
 		$html .= '<div class="card-list-head__sort">';
 			$html .= '<h4 class="card-list-head__sort-title">Ordenar por: ';
 			$html .= '<span class="card-list-head__sort-order card-list-head__sort-order--asc">Precio de menor a mayor</span>';

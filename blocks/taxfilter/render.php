@@ -10,6 +10,7 @@ function render_taxfilter( $attributes, $content, $block) {
 	$type = $attributes['type'];
 	$name = $attributes['name'];
 	$style = $attributes['style'];
+	$className = isset( $attributes['className'] ) ? $attributes['className'] : '';
 
 	$terms = get_terms([
     'taxonomy'   => $taxonomy_slug,
@@ -27,7 +28,7 @@ function render_taxfilter( $attributes, $content, $block) {
 		$terms_list .= '</div>';
 	}
 
-	return '<div class="block-taxfilter block-taxfilter--'.$style.' block-taxfilter--'.$type.'">
+	return '<div class=" '. $className . ' block-taxfilter block-taxfilter--'.$style.' block-taxfilter--'.$type.'">
 			 '.($name ? '<h2 class="block-taxfilter__title">'.$name.'</h2>' : '').'
 			 '.$terms_list.'
 			</div>';

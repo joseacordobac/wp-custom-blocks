@@ -139,8 +139,8 @@ header.js-scrolled .wp-block-site-logo img{
     width: 100%;
     left: 0px;
     bottom: -1500px;
-    padding: 23px;
-    height: 100vh;
+    padding: 10px;
+    height: 100%;
     opacity: 1;
     transition: 0.35s;
   }

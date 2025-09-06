@@ -29,12 +29,13 @@ class RepositoryList
         'title' => get_the_title(),
         'slug' => get_post_field('post_name'),
         'description' => get_the_content(),
-        'thumbnail' => get_the_post_thumbnail_url(),
+        'thumbnail' => get_field('url_de_la_imagen'),
         'url' => get_the_permalink(),
         'price' => get_field('precio'),
         'nota_price' => get_field('nota_de_precio'),
         'tipo_producto' => get_the_terms( get_the_ID(), 'tipo-producto' ),
-        'marca' => get_the_terms( get_the_ID(), 'marcas' )
+        'marca' => get_the_terms( get_the_ID(), 'marcas' ),
+        'whatsapp' => get_field('whatsapp-number', 'options')
       );
     }
 

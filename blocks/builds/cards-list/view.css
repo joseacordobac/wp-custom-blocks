@@ -1,2 +1,2 @@
 
-.skeleton{align-items:center;display:flex;gap:10px}
+.skeleton{align-items:center;display:flex;gap:10px}@media(max-width:780px){.skeleton{flex-direction:column}}
