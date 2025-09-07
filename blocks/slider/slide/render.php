@@ -6,7 +6,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 function render_slide_block($block_attributes, $content) {
 
-	// var_dump($content);
 	$html = '<div class="swiper-slide swiper-slide--block">';
 		$html .= $content;
 	$html .= '</div>';

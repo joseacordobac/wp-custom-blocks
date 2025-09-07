@@ -78,10 +78,6 @@ header.js-scrolled .wp-block-site-logo img{
 
 @media(max-width: 780px){
 
-  #wp--skip-link--target{
-    margin-top: 10px !important;
-  }
-
   .header-columns{
     flex-direction:row !important;
     gap: 5px !important;
@@ -151,4 +147,36 @@ header.js-scrolled .wp-block-site-logo img{
     z-index: 100;
     transition: 0.35s;
   }
+
+  /** img sizes **/
+  .img-m-80 img{
+    width: 80px !important;
+  }
+}
+
+/** force center **/
+@media(max-width: 780px){
+  .text-align--center{
+    text-align: center !important;
+  }
+}
+
+/*** layous ***/
+@media(max-width: 780px){
+  .grid-2-columns{
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .grid-2-columns .wp-block-columns-is-layout-flex{
+    gap: 10px !important;
+  }
+}
+
+/** images **/
+.img-size img{
+  height: 100% !important;
 }
