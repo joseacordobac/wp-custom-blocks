@@ -13,12 +13,15 @@ function args_global(
 
     $args = array(
       'post_type'      => $post_type,
-      'meta_key'       => $meta_key,
-      'orderby'        => 'meta_value',
+      'orderby'        => $orderby,
       'posts_per_page' => $limit,
       'order'          => $order,
       'paged'          => $page
     );
+
+    if($meta_key){
+      $args['meta_key'] = $meta_key;
+    }
     
     if($search){
       $args['s'] = $search;
