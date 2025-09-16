@@ -1,32 +1,36 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
-  "name": "create-block/taxfilters",
+  "name": "create-block/whatsapp",
   "version": "0.1.0",
-  "title": "Taxonomy filter",
+  "title": "Boton whatsapp",
   "category": "widgets",
-  "icon": "category",
-  "description": "This is a taxfilters",
+  "icon": "whatsapp",
+  "description": "Boton whatsapp|",
   "example": {},
   "supports": {
     "html": false
   },
   "attributes": {
-    "taxonomySlug": {
+    "whatsappText": {
       "type": "string",
-      "default": "tipo-producto"
+      "default": "Contáctanos"
     },
-    "type": {
-      "type": "string",
-      "default": "radio"
-    },
-    "name": {
+    "whatsappNumber": {
       "type": "string",
       "default": ""
     },
-    "style": {
+    "whatsappMessage": {
       "type": "string",
-      "default": "inline"
+      "default": ""
+    },
+    "position": {
+      "type": "object",
+      "default": {
+        "type": "relative",
+        "top": "0",
+        "left": "0"
+      }
     }
   },
   "textdomain": "custom-block",

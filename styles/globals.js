@@ -1,6 +1,5 @@
 const headerFixed = () =>{
   const header = document.querySelector('header.wp-block-template-part');
-  console.log(header);
   
   const className = 'js-scrolled';
 
