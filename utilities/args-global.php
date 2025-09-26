@@ -15,7 +15,6 @@ function args_global(
       'post_type'      => $post_type,
       'orderby'        => $orderby,
       'posts_per_page' => $limit,
-      'order'          => $order,
       'paged'          => $page
     );
 
@@ -25,6 +24,12 @@ function args_global(
     
     if($search){
       $args['s'] = $search;
+    }
+
+    if($order){
+      $args['meta_key'] = 'precio';
+      $args['order'] = $order;
+      $args['orderby'] = 'meta_value';
     }
 
     if($taxonomies) {
